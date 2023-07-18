@@ -40,16 +40,19 @@ $allProducts = $products->fetchAll(PDO::FETCH_OBJ); //fetch all products from th
     <div class="row mt-5">
         <?php foreach ($allProducts as $product): ?>
         <div class=" mb-3 col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 mt-3">
-            <div class="card">
+            <div class="card" style="min-height: 650px;max-height: 650px; padding: 1rem 1rem;">
                 <img height="213px" class="card-img-top" src="images/<?php echo $product->image; ?>">
-                <div class="card-body">
+                <div class="card-body p-0 position-relative">
                     <h5 class="d-inline"><b><?php echo $product->title; ?></b></h5>
                     <h5 class="d-inline">
                         <div class="text-muted d-inline">($<?php echo $product->price; ?>/item)</div>
                     </h5>
-                    <p><?php echo $product->description; ?></p>
-                    <a href="#" class="btn btn-primary w-100 rounded my-2">Buy <i class="fas fa-arrow-right"></i>
+
+                    <p style="max-height: 200px;"><?php echo $product->description; ?></p>
+
+                    <a href="#" class="btn btn-secondary w-100 bottom-0 position-absolute rounded">GET <i class="fas fa-arrow-right"></i>
                     </a>
+
                 </div>
             </div>
         </div>
@@ -66,7 +69,6 @@ $allProducts = $products->fetchAll(PDO::FETCH_OBJ); //fetch all products from th
             <!--Grid column-->
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                 <h5 class="text-uppercase">Footer Content</h5>
-
                 <p>
                     Thank you for choosing CourseOffer™ for your online course Needs! We appreciate
                     your interest in expanding your skills and knowledge in these technologies.
