@@ -15,9 +15,9 @@ $allProducts = $products->fetchAll(PDO::FETCH_OBJ); //fetch all products from th
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--icon packs-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/5c5946fe44.js" crossorigin="anonymous"></script>
     <title>CourseOffer</title>
 </head>
@@ -50,8 +50,10 @@ $allProducts = $products->fetchAll(PDO::FETCH_OBJ); //fetch all products from th
 
                         <p style="max-height: 200px;"><?php echo $product->description; ?></p>
 
-                        <a href="payPal.php?id=<?php echo $product->id; ?>" class="btn btn-dark w-100 bottom-0 position-absolute rounded">Get This Course
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+                        <a href="payPal.php?id=<?php echo $product->id; ?>"
+                           class="btn btn-dark w-100 bottom-0 position-absolute rounded">Get This Course
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-paypal" viewBox="0 0 16 16">
                                 <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z"/>
                             </svg>
                         </a>
@@ -91,11 +93,9 @@ $allProducts = $products->fetchAll(PDO::FETCH_OBJ); //fetch all products from th
                     </a>
 
 
-
                     <a href="https://www.linkedin.com/in/matthew-smuts-886086203/" class="text-white">
                         <i class="bi bi-linkedin"></i>
                     </a>
-
 
 
                     <a href="https://www.instagram.com/smuts_matz/" class="text-white">
@@ -143,10 +143,6 @@ $allProducts = $products->fetchAll(PDO::FETCH_OBJ); //fetch all products from th
                                     </svg>
                                     SVGRepo</a>
                             </li>
-                            <li>
-                                <a href="https://popper.js.org/" class="text-white" style="text-decoration: none"><i
-                                            class="bi bi-card-heading"></i> PopperJS</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -164,8 +160,8 @@ $allProducts = $products->fetchAll(PDO::FETCH_OBJ); //fetch all products from th
     </div>
     <!-- Copyright -->
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity=""
-        crossorigin="anonymous"></script>
+
+<!--Bootstrap 5-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity=""
         crossorigin="anonymous"></script>
 </body>
