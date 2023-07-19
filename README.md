@@ -1,4 +1,4 @@
-# CourseOffer
+# CourseOffer™
 PayPal Integration Example Using PHP, HTML and JavaScript
 
 Resources Used Include:
