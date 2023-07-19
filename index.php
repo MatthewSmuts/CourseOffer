@@ -45,12 +45,12 @@ $allProducts = $products->fetchAll(PDO::FETCH_OBJ); //fetch all products from th
                     <div class="card-body p-0 position-relative">
                         <h5 class="d-inline"><b><?php echo $product->title; ?></b></h5>
                         <h5 class="d-inline">
-                            <div class="text-muted d-inline">($<?php echo $product->price; ?>/item)</div>
+                            <div class="text-muted d-inline">($<?php echo $product->price; ?>)</div>
                         </h5>
 
                         <p style="max-height: 200px;"><?php echo $product->description; ?></p>
 
-                        <a href="#" class="btn btn-secondary w-100 bottom-0 position-absolute rounded">GET <i
+                        <a href="#" class="btn btn-dark w-100 bottom-0 position-absolute rounded">GET <i
                                     class="fas fa-arrow-right"></i>
                         </a>
 
