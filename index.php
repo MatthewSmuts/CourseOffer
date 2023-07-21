@@ -1,3 +1,14 @@
+
+<!--
+Still TODO:
+Account system:
+    SSO or OAuth for login and registration
+    Personal Account Details
+    Purchase History
+    Cart - For Multiple Purchases
+    Wish List
+-->
+
 <?php
 require "config.php";
 
